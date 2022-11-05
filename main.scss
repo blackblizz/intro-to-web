@@ -1,3 +1,41 @@
-@import "./base";
-@import "./components";
-@import "./layout";
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100&display=swap');
+
+$font-body: "Roboto", sans-serif;
+$font-display: "Nunito", sans-serif;
+
+$color-primary: white;
+$color-secondary: rgb(234, 219, 197);
+$color-navy: #081252;
+$color-blue: #55c6fa;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+    color: $color-navy;
+}
+
+nav {
+    height: 10vh;
+    background-color: $color-primary;
+    margin: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    display: block;
+    border: 1px solid darkblue;
+    text-decoration: none;
+    padding: 10px 20px 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: $color-blue;
+    text-align: center;
+    font-weight: bold;
+}
